@@ -1,0 +1,391 @@
+<html>
+<title>What makes you special? Animal sounds and more!</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<img id="logo" src="company_logo.png" width="2000" height="694">
+<a align="right" href="#" id="social" class="fa fa-facebook"></a>
+<a align="right" href="#" id="social" class="fa fa-twitter"></a>
+<a align="right" href="#" id="social" class="fa fa-instagram"></a>
+<a align="right" href="#" id="social" class="fa fa-pinterest"></a>
+<body>
+	<div id="navbar">
+  		<a href="#home">Home</a>
+  		<a href="#news">About</a>
+  		<a href="#contact">Contact</a>
+  		<a href="#store">Store</a>
+  		<a href="#blog">Blog</a>
+	</div>
+	<h1 id="h1">Interactive multi-sensory products that children love!</h1>
+	<h2 id="h2"><i>
+		What makes you special? Animal sounds and more!</i></h2>
+	<h1><strike>₹1999 </strike></h1> <h1 style="text-shadow: 3px 2px blue">ONGOING OFFER! ₹1,459.00</h1>
+	<button>Add to cart<i class="fa fa-shopping-cart"></i></button> 
+	<!-- Container for the image gallery -->
+	<div class="container">
+
+  <!-- Full-width images with number text -->
+	  <div class="mySlides">
+	    <div class="numbertext">1 / 6</div>
+	      <img src="product.jpg" style="width:30%">
+	  </div>
+
+	  <div class="mySlides">
+	    <div class="numbertext">2 / 6</div>
+	      <img src="product2.jpg" style="width:30%">
+	  </div>
+
+	  <div class="mySlides">
+	    <div class="numbertext">3 / 6</div>
+	      <img src="product3.jpg" style="width:30%">
+	  </div>
+
+	  <div class="mySlides">
+	    <div class="numbertext">4 / 6</div>
+	      <img src="product4.jpg" style="width:30%">
+	  </div>
+
+	  <div class="mySlides">
+	    <div class="numbertext">5 / 6</div>
+	      <img src="product5.jpg" style="width:30%">
+	  </div>
+
+	  <div class="mySlides">
+	    <div class="numbertext">6 / 6</div>
+	      <img src="product6.jpg" style="width:30%">
+	  </div>
+
+	  <!-- Next and previous buttons -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	  <!-- Image text -->
+	  <div class="caption-container">
+	    <p id="caption"></p>
+	  </div>
+
+	  <!-- Thumbnail images -->
+	  <div class="row">
+	    <div class="column">
+	      <img class="demo cursor" src="product.jpg" style="width:100%" onclick="currentSlide(1)" alt="A delightful read!">
+	    </div>
+	    <div class="column"> 
+	      <img class="demo cursor" src="product2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Vibrant illustrations!">
+	    </div>
+	    <div class="column">
+	      <img class="demo cursor" src="product3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Store, touch and hear!">
+	    </div>
+	    <div class="column">
+	      <img class="demo cursor" src="product4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Featuring animal names, forms and lifelike sounds!">
+	    </div>
+	    <div class="column">
+	      <img class="demo cursor" src="product5.jpg" style="width:100%" onclick="currentSlide(5)" alt="English readalong!">
+	    </div> 
+	    <div class="column">
+	      <img class="demo cursor" src="product6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Reminds what truly makes us special">
+	    </div>
+	  </div>
+	</div>
+	<h3 id="h3">
+	    Store/Touch & Hear: Books & Flashcards<br>
+		A delightful read, with vibrant illustrations, that reminds readers of what truly makes each of us special.<p> 
+
+		Learning objectives:<br>
+		- Animal names, forms and sounds<br>
+		- A little extra information about these animals!<br>
+		- English read along<p>
+
+		Contains: 1 book - 9 pages<br> 
+		(Tiger, Whale, Canary, Elephant, Bee, Frog, Turtle, Giraffe, and Human child)<p></h3>
+
+	<style>
+	/* Align and resize company logo */
+	#logo
+	{
+		display: block;
+  		max-width: 230px;
+  		max-height: 95px;
+ 		width: auto;
+  		height: auto;
+	}
+	/* Style all font awesome icons */
+	.fa 
+	{
+	  ;
+	  padding: 20px;
+	  font-size: 30px;
+	  width: 60px;
+	  text-align: center;
+	  text-decoration: none;
+	}
+
+	/* Facebook */
+	.fa-facebook 
+	{
+	  background: #3B5998;
+	  color: white;
+	}
+
+	/* Twitter */
+	.fa-twitter 
+	{
+	  background: #55ACEE;
+	  color: white;
+	}
+
+	.fa-instagram
+	{
+		background: purple;
+		color: white;
+	}
+
+	.fa-pinterest
+	{
+		background: red;
+		color: white;
+	}
+
+	/* Style the navbar */
+	#navbar 
+	{	
+	 	overflow: hidden;
+	 	background-color: white;
+	 	z-index: 10;
+	}
+
+	/* Navbar links style: color scheme chosen to look visually pleasing */
+	#navbar a 
+	{
+		background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  		background-repeat: no-repeat;
+  		background-size: 100% 0.2em;
+  		background-position: 0 88%;
+  		transition: background-size 0.25s ease-in;
+  		font-family: Advent Pro ExtraLight;
+		font-size: 26px;
+  		float: left;
+  		display: block;
+  		color: black;
+  		text-align: center;
+  		padding: 28px;
+  		text-decoration: none;
+	}
+
+	#navbar a:hover
+	{
+		background-size: 100% 88%;
+	}
+
+	/* Page content */
+	.content 
+	{
+  		padding: 16px;
+	}
+
+	/* Sticky class is added to the navbar with JS when it reaches its scroll position */
+	.sticky 
+	{
+  		position: fixed;
+  		top: 0;
+  		width: 100%;
+	}
+
+	/* Top padding to prevent any quick, sudden movement */
+	.sticky + .content 
+	{
+  		padding-top: 60px;
+	}
+
+	/* Style the headers */
+
+	h1
+	{
+		font-family: Advent Pro ExtraLight;
+	}
+	#h1
+	{
+		font-family: Advent Pro ExtraLight;
+		font-size: 35px;
+		text-align: center;
+	}
+	#h2
+	{
+		font-family: Advent Pro ExtraLight;
+		font-size: 26px;
+	}
+
+	/* Style Add to cart */
+	button
+	{
+		border: none;
+		padding: 10px 16px;
+		text-align: center;
+		text-decoration: none;
+        display: inline-block;
+		font-size: 20px; 
+		font-family: Helvetica; 
+		background-color: #008CBA;
+	}
+	* 
+	{
+  		box-sizing: border-box;
+	}
+
+	/* Position the image container (needed to position the left and right arrows) */
+	.container 
+	{
+	  position: relative;
+	}
+
+	/* Hide the images by default */
+	.mySlides 
+	{
+	  display: none;
+	}
+
+	/* Add a pointer when hovering over the thumbnail images */
+	.cursor 
+	{
+	  cursor: pointer;
+	}
+
+	/* Next & previous buttons */
+	.prev, .next 
+	{
+	  cursor: pointer;
+	  position: absolute;
+	  top: 40%;
+	  width: auto;
+	  padding: 16px;
+	  margin-top: -50px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 20px;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	  -webkit-user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next 
+	{
+	  right: 1054px;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little see-through */
+	.prev:hover, .next:hover 
+	{
+	  background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	/* Number text */
+	.numbertext 
+	{
+	  color: black;
+	  font-size: 10px;
+	  padding: 8px 16px;
+	  position: absolute;
+	  top: 0;
+	}
+
+	/* Container for image text */
+	.caption-container 
+	{
+	  text-align: left;
+	  font-family: Advent Pro ExtraLight;
+	  font-size: 22px;
+	  background-color: 6699ff;
+	  padding: 1px 1px;
+	  color: white;
+	}
+
+	.row:after 
+	{
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	/* Six columns side by side */
+	.column 
+	{
+	  float: left;
+	  width: 10%;
+
+	}
+
+	/* Add a transparency effect for thumbnails */
+	.demo 
+	{
+	  opacity: 0.6;
+	}
+
+	.active, .demo:hover 
+	{
+	  opacity: 1;
+	}
+
+	#h3
+	{
+		font-family: Advent Pro ExtraLight;
+		font-size: 22px;
+	}
+	</style>
+	
+	<script>
+	// When the user scrolls, execute myFunction 
+	window.onscroll = function() {myFunction()};
+
+	// Get the navbar
+	var navbar = document.getElementById("navbar");
+
+	// Get the offset position of the navbar
+	var sticky = navbar.offsetTop;
+
+	// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	function myFunction() 
+	{
+  		if (window.pageYOffset >= sticky) 
+  		{
+    		navbar.classList.add("sticky");
+  		}
+  		else 
+  		{
+    		navbar.classList.remove("sticky");
+  		}
+	}
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	// Next/previous controls
+	function plusSlides(n) 
+	{
+	  showSlides(slideIndex += n);
+	}
+
+	// Thumbnail image controls
+	function currentSlide(n) 
+	{
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) 
+	{
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("demo");
+	  var captionText = document.getElementById("caption");
+	  if (n > slides.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) 
+	  {
+	    slides[i].style.display = "none";
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	    dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";
+	  dots[slideIndex-1].className += " active";
+	  captionText.innerHTML = dots[slideIndex-1].alt;
+	}
+	</script>
+
